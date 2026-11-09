@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Workshop 3 */
+
+.transition-button {
+    background-color: lightblue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: lightcoral;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.animation-box {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(156, 81, 130);
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: "“";
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: lightgray;
+}
+
+/* Workshop 4 */
+
+/* Header */
+
+header {
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Main content */
+
+main {
+    padding: 20px;
+}
+
+/* Footer */
+
+footer {
+    background-color: pink;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Grid Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: rgb(215, 130, 177);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+/* Flexbox Layout */
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.box {
+    background-color: rgb(187, 118, 178);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+/* Responsive Box */
+
+.responsive-box {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .responsive-box {
+        background-color: lightcoral;
+    }
+}
+
+@media (min-width: 601px) {
+    .responsive-box {
+        background-color: rgb(158, 76, 114);
+    }
+}
